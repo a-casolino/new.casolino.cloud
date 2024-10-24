@@ -53,7 +53,7 @@ function enqueue_external_script() {
             true // Carica nel footer
         );
 		
-		// Aggiungi Split Text dalla CDN
+		// Aggiungi Split Text dalla CDNN
         wp_enqueue_script(
             'split-text', // Handle
             'https://unpkg.com/split-type',
