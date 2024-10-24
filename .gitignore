@@ -1,0 +1,14 @@
+.vscode/
+
+# Evita file di sistema macOS
+.DS_Store
+
+# Evita file di sistema Windows
+Thumbs.db
+Desktop.ini
+
+# Evita i log di sistema
+*.log
+
+# Evita file temporanei di sistema
+*.tmp

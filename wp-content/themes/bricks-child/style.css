@@ -1,0 +1,66 @@
+/*
+ Theme Name:   Bricks Child Theme
+ Theme URI:    https://bricksbuilder.io/
+ Description:  Use this child theme to extend Bricks.
+ Author:       Bricks
+ Author URI:   https://bricksbuilder.io/
+ Template:     bricks
+ Version:      1.1
+ Text Domain:  bricks
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap');
+@import url('css/custom-animations.css');
+
+/* Text reveal with rectangles*/
+.load {
+    overflow: hidden;
+    position: relative
+}
+
+.load:before {
+    background: var(--grey-l-3);
+    width: 100%;
+    z-index: 2
+}
+
+.load:after,.load:before {
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-duration: 1s;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.load:after {
+    background: var(--renge);
+    width: 0;
+    z-index: 3
+}
+
+.load.enter:before {
+    -webkit-animation-name: out;
+    -o-animation-name: out;
+    animation-name: out
+}
+
+.load.enter:after {
+    -webkit-animation-name: in;
+    -o-animation-name: in;
+    animation-name: in
+}
+/* End text reveal with rectangles*/
